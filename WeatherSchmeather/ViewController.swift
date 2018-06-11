@@ -129,7 +129,7 @@ class ViewController: UIViewController {
         var  temp = ""
         var windDir = ""
         var Desc = ""
-        let stringURL = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=7170bfc6b84f75f95df38364d4eff05c"
+        let stringURL = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=YOUR_API_KEY"
         let url = URL(string: stringURL)!
         let request = NSMutableURLRequest(url: url)
         URLSession.shared.dataTask(with: request as URLRequest) {
